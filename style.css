@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Play', sans-serif;
+}
+
+
+
+.outer{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2% 10%;
+	width: auto;
+}
+
+h1{
+	width: 100%;
+	text-align: center;
+}
+
+.search{
+	display: flex;
+	flex-direction: column;
+}
+
+
+button{
+	background-color: transparent;
+	border: 1px solid rgba(0,0,0,0.3);
+	margin-top: 1rem;
+	padding: 1rem 1rem;
+	font-family: 'Play', sans-serif;
+	cursor: pointer;
+}
+
+.data{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height:auto;
+}
+
+.data div{
+	display: flex;
+	flex-direction: column;
+	margin-top: .7rem;
+	width: auto;
+	height: auto;
+}
+
+.data button{
+	margin-top: 1rem;
+}
+
+.siblings{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 1px solid rgba(0,0,0,0.6);
+	padding: 2rem .5rem;
+	margin-left: 0;
+}
+
+
+.siblings div{
+	margin-left: 2rem;
+}
+#listdiv{
+	min-height: 5rem;
+	max-width: 20rem;
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,0.3);
+	margin-top: 1rem;
+	padding: 1rem 0;
+	margin-left: 0rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.operations h4{
+	margin-top: 2rem;
+}
+

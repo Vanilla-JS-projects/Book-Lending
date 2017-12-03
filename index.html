@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Book Lending</title>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="outer">
+        <h1>Book Lending</h1>
+        <div class="siblings">
+            <div class="data">
+                <div><label>Title: </label>
+                <input id="title" type="text" name="title"></div>
+                <div><label>Author:</label>
+                <input  id="author"  type="text" name="author"></div>
+                <div><label>ISBN:  </label>
+                <input  id="isbn" type="text" name="isbn"></div>
+                <div><label>Publication:</label>
+                <input  id="publication" type="text" name="publication"></div>
+                <div><label>Genre: </label>
+                <input  id="genre" type="text" name="genre"></div>
+                <div><label>Availibility: </label>
+                <input  id="availibility" type="text" name="availibility"></div>
+            </div>
+            <div class="Search">
+              <h3>Search</h3>
+              <button id="getspecificbook">Search Book by Title</button>
+              <button id="fetchbyauthor">Search Book by Author</button>
+              <button id="fetchbyisbn">Search Book by ISBN</button>
+              <button id="fetchbypublication">Search Book by Publication</button>
+              <button id="fetchbygenre">Search Book by Genre</button>
+            </div>  
+            <div class="operations">
+              <h3>Other functionalities</h3>  
+            
+              <button id="submit">Add Book</button>
+              <button id="list">List available books</button>
+              <button id="update">Update Details</button>
+              <button id="deletebook">Delete Book</button>
+              <button id="viewbookdetails">View Book Details</button>
+              <button id="clear">Clear All</button>
+       
+              <h4>Results:</h4>
+              <div id="listdiv" ></div>
+            </div>
+              
+        </div>
+        <div class="notes">
+          <p><br><b>How to Use</b><br><br>
+          1) Add - please fill all the details.<br>
+          2) Search - please fill in the respected field which you want to search by. Please note that search is case sensitive.<br>
+          3) Delete - please fill in the name of the book to delete it from records.<br>
+          4) View Book Details - please fill in the name of the book in order to view all its details.
+          </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+ 
+</body>
+</html>
